@@ -24,6 +24,8 @@ The objective is to practice TypeScript, and develop a full-stack todo applicati
 
 # Lessons Learned
 
+1. Using TypeScript definitions for Styled-components.
+
 # Acknowledgement
 
 Style guide provided by [Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
