@@ -10,6 +10,8 @@ The objective is to practice TypeScript, and develop a full-stack todo applicati
 - Filter by all/active/complete todos
 - Clear all completed todos
 - Toggle light and dark mode
+- Drag and drop to reorder list
+- Back-end integrated with Firebase
 - Mobile responsive
 
 ## Demo
@@ -18,7 +20,7 @@ The objective is to practice TypeScript, and develop a full-stack todo applicati
 
 - React
 - TypeScript
-- CSS Module
+- Styled-components
 
 # Lessons Learned
 
