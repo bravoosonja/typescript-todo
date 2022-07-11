@@ -1,6 +1,5 @@
 import { useRef, useContext } from 'react';
 import { TodosContext } from '../store/todos-context';
-import classes from "../styles/NewTodo.module.css";
 
 const NewTodo: React.FC= () => {
     const todosCtx = useContext(TodosContext);
