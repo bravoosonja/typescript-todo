@@ -4,6 +4,7 @@ declare module "styled-components" {
   export interface DefaultTheme {
     mobileWidth: string;
     desktopWidth: string;
+    backgroundImage: string;
 
     colors: {
       text: string;

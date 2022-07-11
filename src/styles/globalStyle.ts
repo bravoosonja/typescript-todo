@@ -38,6 +38,20 @@ span {
     color:${(props) => props.theme.colors.subText};
     font-size: 16px;
 }
+
+input[type=text] {
+    color:${(props) => props.theme.colors.text};
+    background-color: ${(props) => props.theme.colors.formBackground};
+    font-size: 18px;
+    padding:0.5rem 1rem;
+    width:100%; 
+    border-radius: 5px;
+    
+    ::placeholder{
+        color:${(props) => props.theme.colors.subText};
+    }
+   
+}
 `;
 
 export default GlobalStyle;
