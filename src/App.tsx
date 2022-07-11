@@ -1,7 +1,7 @@
 import Todos from './components/Todos';
 import NewTodo from './components/NewTodo';
 import TodosContextProvider from './store/todos-context';
-import GlobalStyles from './styles/GlobalStyle';
+import GlobalStyles from './styles/globalStyle';
 import { ThemeProvider } from "styled-components";
 
 function App() {
