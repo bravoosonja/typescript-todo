@@ -5,9 +5,9 @@ import Todos from "./components/Todos";
 import NewTodo from "./components/NewTodo";
 import TodosContextProvider from "./store/todos-context";
 // styles
-import GlobalStyles from "./styles/globalStyle";
+import GlobalStyles from "./theme/globalStyle";
 import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme } from "./styles/theme";
+import { lightTheme, darkTheme } from "./theme/theme";
 
 function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -21,9 +21,11 @@ function App() {
       <TodosContextProvider>
         <GlobalStyles />
         <Wrapper>
-          <BackgroundImage/>
-          <NewTodo />
-          <Todos />
+          <BackgroundImage />
+          <Container>
+            <NewTodo />
+            <Todos />
+          </Container>
         </Wrapper>
       </TodosContextProvider>
     </ThemeProvider>
@@ -35,20 +37,27 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3rem;
+  width: 100%;
 `;
 
-//doesn't work
 const BackgroundImage = styled.div`
-  background-image:url(${(props) => props.theme.backgroundImage});
-  width:100%;
-  height:30vh;
-  
-`;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  @media (min-width: 375px) {
+    background-image: url(${(props) => props.theme.mobileBg});
+    width: 100vw;
+    height: 200px;
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url(${(props) => props.theme.desktopBg});
+    width: 100vw;
+    height: 300px;
+  }
+`;
 
 const Container = styled.div``;
-
-
 
 export default App;

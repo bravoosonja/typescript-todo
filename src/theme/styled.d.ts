@@ -2,9 +2,8 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
-    mobileWidth: string;
-    desktopWidth: string;
-    backgroundImage: string;
+    desktopBg: string;
+    mobileBg: string;
 
     colors: {
       text: string;

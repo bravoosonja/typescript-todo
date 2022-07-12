@@ -47,11 +47,10 @@ input[type=text] {
     width:100%; 
     border-radius: 5px;
     
-    ::placeholder{
-        color:${(props) => props.theme.colors.subText};
+        ::placeholder {
+            color:${(props) => props.theme.colors.subText};
+        }
     }
-   
-}
 `;
 
 export default GlobalStyle;

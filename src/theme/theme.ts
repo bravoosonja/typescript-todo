@@ -1,9 +1,13 @@
 import { DefaultTheme } from "styled-components";
+// images
+import DesktopLightImage from "../assets/images/bg-desktop-light.jpg";
+import DesktopDarkImage from "../assets/images/bg-desktop-dark.jpg";
+import MobileLightImage from "../assets/images/bg-mobile-light.jpg";
+import MobileDarkImage from "../assets/images/bg-mobile-dark.jpg";
 
 export const lightTheme: DefaultTheme = {
-  mobileWidth: "375px",
-  desktopWidth: "1440px",
-  backgroundImage: "assets/images/bg-desktop-light.jpg",
+  desktopBg: DesktopLightImage,
+  mobileBg: MobileLightImage,
 
   colors: {
     text: "hsl(236, 9%, 61%)",
@@ -17,9 +21,8 @@ export const lightTheme: DefaultTheme = {
 };
 
 export const darkTheme: DefaultTheme = {
-  mobileWidth: "375px",
-  desktopWidth: "1440px",
-  backgroundImage: "assets/images/bg-desktop-dark.jpg",
+  desktopBg: DesktopDarkImage,
+  mobileBg: MobileDarkImage,
 
   colors: {
     text: "hsl(236, 33%, 92%)",
